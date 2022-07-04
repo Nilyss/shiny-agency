@@ -2,7 +2,6 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import reportWebVitals from './reportWebVitals'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-
 import Header from './components/Header'
 import Home from './pages/Home'
 import Survey from './pages/Survey'
@@ -12,9 +11,13 @@ import Freelances from './pages/Freelances'
 import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
-div {
-font-family: 'Trebuchet MS', Helvetica, sans-serif;
-}
+  * {
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+  }
+  
+  body {
+    margin: 0
+  }
 `
 
 const root = ReactDOM.createRoot(document.getElementById('root'))

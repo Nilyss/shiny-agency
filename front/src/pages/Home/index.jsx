@@ -1,7 +1,7 @@
-import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import colors from '../../utils/style/color'
 import homeIllustration from '../../assets/home-illustration.svg'
+import { StyledLink } from '../../utils/style/Atoms'
 
 const HomeContainer = styled.div`
   margin: 6rem 3rem 3rem 3rem;
@@ -9,17 +9,6 @@ const HomeContainer = styled.div`
   display: flex;
   flex-flow: row wrap;
   background: ${colors.backgroundLight};
-`
-
-const StyledLink = styled(Link)`
-  width: 17%;
-  text-align: center;
-  text-decoration: none;
-  color: white;
-  font-weight: 700;
-  border-radius: 29px;
-  padding: 0.5rem 0.3rem 0.5rem 0.3rem;
-  background-color: ${colors.primary};
 `
 
 const HomeTitle = styled.div`
