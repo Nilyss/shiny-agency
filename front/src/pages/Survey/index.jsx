@@ -13,21 +13,29 @@ export default function Survey() {
   const [isDataLoading, setDataLoading] = useState(false)
   const [error, setError] = useState(false)
 
-  const SurveyContainer = styled.div``
-  const QuestionTitle = styled.h1``
-  const QuestionContent = styled.h2``
-  const LinkWrapper = styled.nav``
+  const SurveyContainer = styled.div`
+    display: flex;
+    flex-flow: column;
+    align-items: center;    
+  `
+  const QuestionTitle = styled.h1`
+    font-size: 2rem;
+  `
+  const QuestionContent = styled.h2`
+    font-size: 1.5rem;
+  `
+  const LinkWrapper = styled.nav`
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    text-decoration: none;
+  `
+  const LinkStyled = styled(Link)`
+    margin-top: 4rem;
+    text-decoration: none;
+    color: black;
+  `
 
-  // useEffect(() => {
-  //   setDataLoading(true)
-  //   fetch(`http://localhost:8000/survey`)
-  //     .then((res) => res.json())
-  //     .then(({ surveyData }) => {
-  //       setSurveyData(surveyData)
-  //       setDataLoading(false)
-  //     })
-  //     .catch((error) => console.log(error))
-  // }, [])
 
   useEffect(() => {
     async function fetchSurvey() {
@@ -59,11 +67,11 @@ export default function Survey() {
         <QuestionContent>{surveyData[questionNumber]} </QuestionContent>
       )}
       <LinkWrapper>
-        <Link to={`/survey/${prevQuestionNumber}`}>Question Précédente</Link>
+        <LinkStyled to={`/survey/${prevQuestionNumber}`}>Question Précédente</LinkStyled>
         {surveyData[questionNumberInt + 1] ? (
-          <Link to={`/survey/${nextQuestionNumber}`}>Question suivante</Link>
+          <LinkStyled to={`/survey/${nextQuestionNumber}`}>Question suivante</LinkStyled>
         ) : (
-          <Link to={`/results`}>Résultats</Link>
+          <LinkStyled to={`/results`}>Résultats</LinkStyled>
         )}
       </LinkWrapper>
     </SurveyContainer>
