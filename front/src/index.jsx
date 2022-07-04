@@ -9,6 +9,7 @@ import Error from './components/Error'
 import Results from './pages/Results'
 import Freelances from './pages/Freelances'
 import { createGlobalStyle } from 'styled-components'
+import Footer from './components/Footer/index'
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -32,6 +33,7 @@ root.render(
       <Route path="/freelance" element={<Freelances />}></Route>
       <Route path={'/*'} element={<Error />}></Route>
     </Routes>
+    <Footer />
   </BrowserRouter>
 )
 

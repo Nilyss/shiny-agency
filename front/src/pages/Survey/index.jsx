@@ -20,9 +20,11 @@ export default function Survey() {
   `
   const QuestionTitle = styled.h1`
     font-size: 2rem;
+    width: 80%;
   `
   const QuestionContent = styled.h2`
     font-size: 1.5rem;
+    width: 80%;
   `
   const LinkWrapper = styled.nav`
     display: flex;
