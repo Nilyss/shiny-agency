@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8be897c0-41a4-4c98-bd3e-ddbe9dbe3734" name="Changes" comment="" />
+    <list default="true" id="8be897c0-41a4-4c98-bd3e-ddbe9dbe3734" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,7 +18,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/front" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -42,7 +44,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "prettierjs.PrettierConfiguration.Package": "/usr/local/lib/node_modules/prettier",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "preferences.general",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -67,7 +69,10 @@
       <workItem from="1656693140594" duration="32000" />
       <workItem from="1656693294108" duration="95000" />
       <workItem from="1656693397956" duration="8790000" />
-      <workItem from="1656821436518" duration="43168000" />
+      <workItem from="1656821436518" duration="51365000" />
+      <workItem from="1656939127173" duration="113000" />
+      <workItem from="1656939261229" duration="1207000" />
+      <workItem from="1656943714334" duration="78000" />
     </task>
     <servers />
   </component>
