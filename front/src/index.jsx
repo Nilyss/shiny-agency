@@ -8,32 +8,27 @@ import Survey from './pages/Survey'
 import Error from './components/Error'
 import Results from './pages/Results'
 import Freelances from './pages/Freelances'
-import { createGlobalStyle } from 'styled-components'
 import Footer from './components/Footer/index'
-
-const GlobalStyle = createGlobalStyle`
-  * {
-    font-family: 'Trebuchet MS', Helvetica, sans-serif;
-  }
-  
-  body {
-    margin: 0
-  }
-`
+import GlobalStyle from './utils/style/GlobalStyle'
+import { ThemeProvider, SurveyProvider } from './utils/context'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <BrowserRouter>
-    <GlobalStyle />
-    <Header />
-    <Routes>
-      <Route path="/" element={<Home />}></Route>
-      <Route path="/survey/:questionNumber" element={<Survey />}></Route>
-      <Route path="/results" element={<Results />}></Route>
-      <Route path="/freelance" element={<Freelances />}></Route>
-      <Route path={'/*'} element={<Error />}></Route>
-    </Routes>
-    <Footer />
+    <ThemeProvider>
+      <SurveyProvider>
+        <GlobalStyle />
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/survey/:questionNumber" element={<Survey />}></Route>
+          <Route path="/results" element={<Results />}></Route>
+          <Route path="/freelance" element={<Freelances />}></Route>
+          <Route path={'/*'} element={<Error />}></Route>
+        </Routes>
+        <Footer />
+      </SurveyProvider>
+    </ThemeProvider>
   </BrowserRouter>
 )
 
